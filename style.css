@@ -1,0 +1,24 @@
+
+/* background image  */
+.image{
+    height:100%;
+    width: 100%;
+    position: fixed;
+    background-size: cover;
+    background-position: fixed;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+/* first page central text box  */
+.box {
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 50px;
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    border-radius: 20px;
+    opacity: 75;
+}

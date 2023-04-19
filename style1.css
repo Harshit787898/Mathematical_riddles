@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(209,63,123);
+background: linear-gradient(326deg, rgba(209,63,123,1) 2%, rgba(43,181,199,1) 28%, rgba(221,47,95,1) 100%); 
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    position: relative;
+    top: 40px;
+    color: #4a0303;
+}
+
+#container {
+    height: 440px;
+    width: 560px;
+    background: rgb(63,133,209);
+background: linear-gradient(326deg, rgba(63,133,209,1) 2%, rgba(199,43,152,1) 49%, rgba(221,47,154,1) 100%);
+    margin: 0 auto;
+    top: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    /*  box-shadow: [horizontal offset] [vertical offset] 
+    [blur radius] [spread radius] [color]; */
+    position: relative;
+    
+}
+
+#score {
+    background-color: #9fe1e9;
+    color: #888E5F;
+    padding: 11px;
+    position: absolute;
+    right: 11px;
+    box-shadow: 0px 4px #9da853;
+}
+
+#correct {
+    position: absolute;
+    left: 45%;
+    background-color: #42e252;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#wrong {
+    position: absolute;
+    left: 42%;
+    background-color: #de401a;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#question {
+    width: 450px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: #1fd8d2;
+    box-shadow: 0px 4px #535aa8;
+    text-align: center;
+    /* for horizontal center */
+    font-size: 100px;
+    font-family: 'Play', sans-serif;
+    color: black;
+}
+
+#instruction {
+    width: 450px;
+    height: 50px;
+    background-color:  #1fd8d2;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 4px #8153a8;
+}
+
+#choices {
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.box {
+    width: 85px;
+    height: 85px;
+    background-color: rgb(130, 174, 236);
+    flex-direction: column;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.box:hover,
+#startreset:hover {
+    background-color: #9c89F6;
+    color: white;
+    box-shadow: 0px 4px #6b54d3;
+}
+
+.box:active,
+#startreset:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
+
+#startreset {
+    width: 100px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0px auto;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+
+#timeremaining {
+    width: 180px;
+    padding: 10px;
+    position: absolute;
+    top: 385px;
+    left: 370px;
+    background-color: rgba(16, 204, 179, 0.7);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#gameOver {
+    width: 85%;
+    height: 55%;
+    background: rgb(63,133,209);
+    background: linear-gradient(326deg, rgba(63,133,209,1) 2%, rgba(199,43,152,1) 49%, rgba(221,47,154,1) 100%); 
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 57px;
+    left: 45px;
+    padding: 50px;
+    z-index: 2;
+    display: none;
+    border-radius: 20px;
+}
+
+@media (max-width: 570px) {
+    #container {
+        width: 440px;
+        top: 60px;
+    }
+
+    #correct {
+        left: 40%;
+    }
+
+    #wrong {
+        left: 38%;
+    }
+
+    #question,
+    #instruction,
+    #choices {
+        width: 420px;
+    }
+
+    #startreset {
+        width: 205px;
+        margin-left: 0;
+    }
+
+    #timeremaining {
+        width: 205px;
+        left: 225px;
+        text-align: center;
+        display: block;
+    }
+
+    #gameOver {
+        width: 400px;
+        height: 250px;
+        background: linear-gradient(#F3CA6B, #F3706C);
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        padding-top: 90px;
+        z-index: 2;
+        display: none;
+    }
+}
