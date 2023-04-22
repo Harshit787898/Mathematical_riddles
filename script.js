@@ -22,7 +22,7 @@ document.querySelector("#startreset").onclick = () =>
         //show countdown box
         showElement("timeremaining");
         //countdown time
-        timeRemaining = 40;
+        timeRemaining = 30;
         //show countdown in sec
         document.querySelector("#timeremainingvalue").innerHTML = timeRemaining;
         //hide the game over box
