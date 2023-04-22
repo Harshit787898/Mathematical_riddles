@@ -10,8 +10,8 @@
 body {
     width: 100%;
     height: 100vh;
-    background: rgb(209,63,123);
-background: linear-gradient(326deg, rgba(209,63,123,1) 2%, rgba(43,181,199,1) 28%, rgba(221,47,95,1) 100%); 
+    background: rgba(14, 224, 224, 0.352);
+background: radial-gradient(circle,#BCECE0 0%, #36EEE0 100%);
     
 }
 
@@ -26,26 +26,26 @@ h1 {
 #container {
     height: 440px;
     width: 560px;
-    background: rgb(63,133,209);
-background: linear-gradient(326deg, rgba(63,133,209,1) 2%, rgba(199,43,152,1) 49%, rgba(221,47,154,1) 100%);
+    background-color: #f3f3f3;
     margin: 0 auto;
     top: 80px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 4px 0px 0px #009de4;
+    box-shadow: 10px 10px 10px  rgba(0,0,0,0.4);
     /*  box-shadow: [horizontal offset] [vertical offset] 
     [blur radius] [spread radius] [color]; */
     position: relative;
+    box-sizing: content-box;
     
 }
 
 #score {
     background-color: #9fe1e9;
-    color: #888E5F;
+    color: #4a0303;
     padding: 11px;
     position: absolute;
     right: 11px;
-    box-shadow: 0px 4px #9da853;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.2);
 }
 
 #correct {
@@ -71,12 +71,12 @@ background: linear-gradient(326deg, rgba(63,133,209,1) 2%, rgba(199,43,152,1) 49
     height: 150px;
     margin: 50px auto 10px auto;
     background-color: #1fd8d2;
-    box-shadow: 0px 4px #535aa8;
+    box-shadow: 0px 2px rgba(0,0,0,0.4);
     text-align: center;
     /* for horizontal center */
-    font-size: 100px;
+    font-size: 80px;
     font-family: 'Play', sans-serif;
-    color: black;
+    color: #4C5270;
 }
 
 #instruction {
@@ -86,7 +86,7 @@ background: linear-gradient(326deg, rgba(63,133,209,1) 2%, rgba(199,43,152,1) 49
     margin: 10px auto;
     text-align: center;
     line-height: 50px;
-    box-shadow: 0px 4px #8153a8;
+    box-shadow: 0px 2px rgba(0,0,0,0.4);
 }
 
 #choices {
@@ -95,13 +95,14 @@ background: linear-gradient(326deg, rgba(63,133,209,1) 2%, rgba(199,43,152,1) 49
     margin: 5px auto;
     display: flex;
     justify-content: space-between;
+   
     
 }
 
 .box {
     width: 85px;
     height: 85px;
-    background-color: rgb(130, 174, 236);
+    background-color: #F652A0;
     flex-direction: column;
     border-radius: 3px;
     cursor: pointer;
@@ -153,9 +154,9 @@ background: linear-gradient(326deg, rgba(63,133,209,1) 2%, rgba(199,43,152,1) 49
 #gameOver {
     width: 85%;
     height: 55%;
-    background: rgb(63,133,209);
-    background: linear-gradient(326deg, rgba(63,133,209,1) 2%, rgba(199,43,152,1) 49%, rgba(221,47,154,1) 100%); 
-    color: white;
+    background: rgb(14,223,224);
+background: radial-gradient(circle,#BCECE0 0%, #36EEE0 100%);
+color: #4a0303;
     font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;

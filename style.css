@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap');
 
 /* background image  */
+
+h1{
+    font-family: poppins,sans-serif;
+}
 .image{
     height:100%;
     width: 100%;
@@ -17,8 +22,8 @@
     width: fit-content;
     padding: 50px;
     position: absolute;
-    top: 250px;
-    left: 300px;
+    top: 270px;
+    left: 270px;
     border-radius: 20px;
     opacity: 75;
 }

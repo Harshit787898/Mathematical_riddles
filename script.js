@@ -22,7 +22,7 @@ document.querySelector("#startreset").onclick = () =>
         //show countdown box
         showElement("timeremaining");
         //countdown time
-        timeRemaining = 30;
+        timeRemaining = 40;
         //show countdown in sec
         document.querySelector("#timeremainingvalue").innerHTML = timeRemaining;
         //hide the game over box
@@ -97,8 +97,8 @@ function startCountdown()
             hideElement("wrong");
             //change the mode of playing
             playing = false;
-            //change button to start 
-            document.querySelector("#startreset").innerHTML = "Start Game";
+            //change button to reload 
+            document.querySelector("#startreset").innerHTML = "Reload";
         }
     }, 1000);
 }
@@ -107,6 +107,7 @@ function stopCountdown()
 {
     //stop countdown
     clearInterval(action);
+    
 }
 
 function hideElement(Id)
@@ -117,17 +118,19 @@ function hideElement(Id)
 function showElement(Id)
 {
     document.querySelector("#" + Id).style.display = "block";
+  
 }
 
 function generateQA()
 {
     //generating random number between 1-9
-    var x = 1 + Math.round(9 * Math.random());
-    var y = 1 + Math.round(9 * Math.random());
+    var x = 1 + Math.round(12 * Math.random());
+    var y = 1 + Math.round(12 * Math.random());
+    var z = 1 + Math.round(12 * Math.random());
     //correct answer
-    correctAnswer = x * y;
+    correctAnswer = (x * y) + z;
     //setting question
-    document.querySelector("#question").innerHTML = x + " x " + y;
+    document.querySelector("#question").innerHTML = x + " x " + y + " + " + z;
     //setting random position for correct answer
     var correctPosition = 1 + Math.round(3 * Math.random());
     document.querySelector("#box" + correctPosition).innerHTML = correctAnswer;
@@ -139,7 +142,7 @@ function generateQA()
         if (i != correctPosition) {
             var wrongAnswer;
             do {
-                wrongAnswer = (1 + Math.round(9 * Math.random())) * (1 + Math.round(9 * Math.random()));
+                wrongAnswer = (1 + Math.round(12 * Math.random())) * (1 + Math.round(12 * Math.random())) + (1 + Math.round(12 * Math.random()));
             } while ((answers.indexOf(wrongAnswer)) > -1)
             document.querySelector("#box" + i).innerHTML = wrongAnswer;
             answers.push(wrongAnswer)
