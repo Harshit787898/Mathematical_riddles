@@ -124,9 +124,9 @@ function showElement(Id)
 function generateQA()
 {
     //generating random number between 1-9
-    var x = 1 + Math.round(12 * Math.random());
-    var y = 1 + Math.round(12 * Math.random());
-    var z = 1 + Math.round(12 * Math.random());
+    var x = 1 + Math.round(15 * Math.random());
+    var y = 1 + Math.round(10 * Math.random());
+    var z = 1 + Math.round(25 * Math.random());
     //correct answer
     correctAnswer = (x * y) + z;
     //setting question
@@ -142,7 +142,7 @@ function generateQA()
         if (i != correctPosition) {
             var wrongAnswer;
             do {
-                wrongAnswer = (1 + Math.round(12 * Math.random())) * (1 + Math.round(12 * Math.random())) + (1 + Math.round(12 * Math.random()));
+                wrongAnswer = (1 + Math.round(15 * Math.random())) * (1 + Math.round(10 * Math.random())) + (1 + Math.round(25 * Math.random()));
             } while ((answers.indexOf(wrongAnswer)) > -1)
             document.querySelector("#box" + i).innerHTML = wrongAnswer;
             answers.push(wrongAnswer)
