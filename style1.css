@@ -12,7 +12,7 @@ body {
     height: 100vh;
     background: rgba(14, 224, 224, 0.352);
 background: radial-gradient(circle,#BCECE0 0%, #36EEE0 100%);
-    
+  
 }
 
 h1 {
@@ -67,10 +67,10 @@ h1 {
 }
 
 #question {
-    width: 450px;
+    width: 460px;
     height: 150px;
     margin: 50px auto 10px auto;
-    background-color: #1fd8d2;
+    background-color: #80f1ed;
     box-shadow: 0px 2px rgba(0,0,0,0.4);
     text-align: center;
     /* for horizontal center */
@@ -80,13 +80,15 @@ h1 {
 }
 
 #instruction {
-    width: 450px;
+    width: 460px;
     height: 50px;
-    background-color:  #1fd8d2;
+    background-color:  #80f1ed;
     margin: 10px auto;
     text-align: center;
     line-height: 50px;
     box-shadow: 0px 2px rgba(0,0,0,0.4);
+    font-weight: bold;
+    
 }
 
 #choices {
@@ -102,7 +104,7 @@ h1 {
 .box {
     width: 85px;
     height: 85px;
-    background-color: #F652A0;
+    background-color: cyan;
     flex-direction: column;
     border-radius: 3px;
     cursor: pointer;
@@ -115,9 +117,9 @@ h1 {
 
 .box:hover,
 #startreset:hover {
-    background-color: #9c89F6;
+    background-color: darkcyan;
     color: white;
-    box-shadow: 0px 4px #6b54d3;
+    box-shadow: 0px 4px rgba(0,0,0,0.4);
 }
 
 .box:active,
@@ -145,12 +147,37 @@ h1 {
     position: absolute;
     top: 385px;
     left: 370px;
-    background-color: rgba(16, 204, 179, 0.7);
+    background-color: rgba(205, 249, 48, 0.9);
     border-radius: 3px;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
     display: none;
+    animation: wiggle 2s linear infinite;
+    font-weight: bold;
+    box-sizing: content-box;
 }
-
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
 #gameOver {
     width: 85%;
     height: 55%;

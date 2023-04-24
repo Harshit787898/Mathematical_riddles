@@ -68,6 +68,7 @@ for (let i = 1; i < 5; i++) {
                 {
                     hideElement("wrong");
                 }, 1000);
+                timeRemaining -=1;
             }
         }
     }
