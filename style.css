@@ -14,6 +14,7 @@ h1{
     background-position: fixed;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    overflow: hidden;
 }
 
 /* first page central text box  */
