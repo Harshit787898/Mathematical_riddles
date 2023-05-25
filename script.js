@@ -46,7 +46,8 @@ for (let i = 1; i < 5; i++) {
             if (document.querySelector("#box" + i).innerHTML == correctAnswer) {
                 //increase score by 1
                 score++;
-                timeRemaining +=1;
+                //increase time by 2
+                timeRemaining +=2;
                 //set score value
                 document.querySelector("#scorevalue").innerHTML = score;
                 //hide wrong box and show correct box
