@@ -6,10 +6,18 @@ h1{
     font-family: poppins,sans-serif;
 }
 
+.body{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .image{
     height:100%;
     width: 100%;
-    position: fixed;
+    position:fixed;
     background-size: cover;
     background-position: fixed;
     margin: 0px 0px 0px 0px;
@@ -19,22 +27,22 @@ h1{
 /* first page central text box  */
 .box {
     text-align: center;
-    height: fit-content;
-    width: fit-content;
-    padding: 50px;
+    height: 250px;
+    width: 650px;
     position: absolute;
-    top: 270px;
-    left: 270px;
+    top: 225px;
+    left: 95px;
     border-radius: 20px;
-    opacity: 75;
-    
+    border: white 5px solid;
+    color: white;
+    padding: 35px;
 }
 
 button {
     animation: wiggle 2s linear infinite;
     position: absolute;
     left: calc(50% - 3em);
-    top: calc(50% - 2em);
+    top: 150px;
     
     height: 4em;
     width: 7em;
