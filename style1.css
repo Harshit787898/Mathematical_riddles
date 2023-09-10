@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+.image{
+    height:100%;
+    width: 100%;
+    position:fixed;
+    background-size: cover;
+    background-position: fixed;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
 
 body {
     width: 100%;
@@ -18,23 +27,23 @@ background: radial-gradient(circle,#BCECE0 0%, #36EEE0 100%);
 h1 {
     text-align: center;
     font-family: 'Play', sans-serif;
-    position: relative;
-    top: 40px;
-    color: #4a0303;
+    position: absolute;
+    top: 65px;
+    left: 325px;
+    color: white;
 }
 
 #container {
     height: 440px;
     width: 560px;
-    background-color: #f3f3f3;
+    background-color:rgb(55, 160, 230);
     margin: 0 auto;
-    top: 80px;
+    top: 135px;
+    left: 150px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px  rgba(0,0,0,0.4);
-    /*  box-shadow: [horizontal offset] [vertical offset] 
-    [blur radius] [spread radius] [color]; */
-    position: relative;
+    position: absolute;
     box-sizing: content-box;
     
 }
