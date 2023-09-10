@@ -83,7 +83,7 @@ function startCountdown()
         //show countdown in sec
         document.querySelector("#timeremainingvalue").innerHTML = timeRemaining;
         //no time left
-        if (timeRemaining == 0) {
+        if (timeRemaining <= 0) {
             //game over
             stopCountdown();
             //show game over box
